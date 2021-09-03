@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poo-ej2</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+        </div>
+    </nav>
+    <div class="container mt-3">
+
+        <div class="row">
+            <div class="col-4 ">
+                <h3>Àrea de circunferencia</h3>
+
+                <label class="form-label mb-1">Radio</label>
+
+                <input id="inp_radio" class="form-control mb-3" type="number" placeholder="Ingrese el radio">
+                <button id="btn_area" class="btn btn-dark mb-3">Calcular</button>
+
+                <h3 id="h3_circ"></h3>
+
+            </div>
+
+            <div class="col-4">
+                <h3>Àrea triangulo rectangulo</h3>
+
+                <label class="form-label mb-1">Base</label>
+                <input id="inp_base" class="form-control mb-3" type="number" placeholder="Ingrese la base">
+
+                <label class="form-label mb-1">Altura</label>
+                <input id="inp_altura" class="form-control mb-3" type="number" placeholder="Ingrese la Altura">
+                
+                <button id="btn_areaTri" class="btn btn-dark mb-3">Calcular</button>
+
+                <h3 id="h3_areaTri"></h3>
+                
+            </div>
+
+            <div class="col-4">
+
+                <h3>Àrea trapecio</h3>
+
+                 <label class="form-label mb-1">A (Base superior)</label>
+                <input id="inp_baseSup" class="form-control mb-3" type="number" placeholder="Ingrese la Base superior">
+
+                <label class="form-label mb-1">B (Base inferior)</label>
+                <input id="inp_baseInf" class="form-control mb-3" type="number" placeholder="Ingrese la Base inferior">
+
+                <label class="form-label mb-1">H (Altura)</label>
+                <input id="inp_alturaTra" class="form-control mb-3" type="number" placeholder="Ingrese la Altura">
+                <button id="btn_areaTra" class="btn btn-dark mb-3">Calcular</button>
+                <h3 id="h3_areaTra"></h3>
+            </div>
+        </div>
+
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
