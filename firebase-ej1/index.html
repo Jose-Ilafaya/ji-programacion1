@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase EJ1</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Firebase CRUD</a>
+        </div>
+    </nav>
+    <div class="container mt-3">
+
+        <div class="row">
+
+            <div class="col-4">
+                <div class="mb-3">
+                    <label  class="form-label">Nombre</label>
+                    <input id="inp_nom" type="text"class="form-control" placeholder="Ingrese Nombre" >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Apellido</label>
+                    <input id="inp_ape" type="text"class="form-control" placeholder="Ingrese Apellido" >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">DNI</label>
+                    <input id="inp_dni" type="number"class="form-control" placeholder="Ingrese DNI" >
+                </div>
+                <button onclick="guardarCliente()" class="btn btn-success">Guardar</button>
+            </div>
+            <div class="col-8">
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Dni</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="./firebase.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
